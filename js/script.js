@@ -98,8 +98,14 @@ $(function() {
 
 	$('.create-column').click(function(){
 		var name = prompt('Enter a column name');
+		if (name != null) {
 		var column = new Column(name);
 		board.addColumn(column);
+		}
+		else {
+			return;
+		}
+		
 	});
 
 	// CREATING COLUMNS

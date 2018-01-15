@@ -29,6 +29,14 @@ $(function() {
 
 			$columnAddCard.click(function() {
 				self.addCard(new Card(prompt("Enter the name of the card")));
+				if (self.addCard != null) {
+		var column = new Column(name);
+		board.addColumn(column);
+		}
+		else {
+			return;
+		}
+
 			});
 
 			$column.append($columnTitle)
@@ -98,8 +106,14 @@ $(function() {
 
 	$('.create-column').click(function(){
 		var name = prompt('Enter a column name');
+		if (name != null) {
 		var column = new Column(name);
 		board.addColumn(column);
+		}
+		else {
+			return;
+		}
+
 	});
 
 	// CREATING COLUMNS
@@ -120,5 +134,3 @@ $(function() {
 	todoColumn.addCard(card1);
 	doingColumn.addCard(card2);
 });
-
-

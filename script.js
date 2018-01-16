@@ -113,7 +113,11 @@ $(function() {
 		else {
 			return;
 		}
+<<<<<<< HEAD:script.js
 
+=======
+		
+>>>>>>> 6a107759ce4afcad8df99eea9d1e53551dc57bfe:js/script.js
 	});
 
 	// CREATING COLUMNS

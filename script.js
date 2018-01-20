@@ -106,7 +106,6 @@ $(function() {
 			var column = new Column(name);
 			board.addColumn(column);
 		}
-		
 	});
 
 	// CREATING COLUMNS
